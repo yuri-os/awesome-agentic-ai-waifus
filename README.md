@@ -78,7 +78,7 @@ Complete, runnable companion/VTuber applications — pick one of these if you wa
 - **[amica](https://github.com/semperai/amica)** ★1.6k — Open-source interface for interactive 3D-character communication with voice synthesis/recognition; simpler and more embeddable than the above.
 - **[aituber-kit](https://github.com/tegnike/aituber-kit)** ★1k — Next.js/TypeScript toolkit for VRM + Live2D + Motion-PNG AI characters with YouTube Live chat ingestion built in; a good "closest stack match" if you're already in the JS/web ecosystem.
 - **[ChatdollKit](https://github.com/uezo/ChatdollKit)** ★1.2k / **[AIAvatarKit](https://github.com/uezo/aiavatarkit)** ★647 — Unity-based SDKs (same author) for turning a 3D model into a conversational agent with voice + facial coordination; good if you want a Unity pipeline rather than web/Electron.
-- **[Paraworks/BangDreamAi](https://github.com/Paraworks/BangDreamAi)**, **[projectBEA](https://github.com/emqnuele/projectBEA)**, **[riko_project](https://github.com/rayenfeng/riko_project)**, **[LingChat](https://github.com/SlimeBoyOwO/LingChat)**, **[Xiao8](https://github.com/wehos/Xiao8)**, **[vixevia](https://github.com/IRedDragonICY/vixevia)**, **[nekro-agent](https://github.com/KroMiose/nekro-agent)** — smaller/newer entries in the same genre, worth a look depending on your preferred LLM backend or platform.
+- **[Paraworks/BangDreamAi](https://github.com/Paraworks/BangDreamAi)**, **[projectBEA](https://github.com/emqnuele/projectBEA)**, **[riko_project](https://github.com/rayenfeng/riko_project)**, **[LingChat](https://github.com/SlimeBoyOwO/LingChat)**, **[N.E.K.O](https://github.com/Project-N-E-K-O/N.E.K.O)** (formerly Xiao8), **[vixevia](https://github.com/IRedDragonICY/vixevia)**, **[nekro-agent](https://github.com/KroMiose/nekro-agent)** — smaller/newer entries in the same genre, worth a look depending on your preferred LLM backend or platform.
 
 ---
 
@@ -114,9 +114,9 @@ The hardest unsolved problem in this space — giving a companion continuity acr
 
 ## Local LLM Inference & Serving
 
-- **[llama.cpp](https://github.com/ggerganov/llama.cpp)** — the substrate almost everything else in this section is built on; C/C++ LLM inference, runs anywhere from a phone to a server.
+- **[llama.cpp](https://github.com/ggml-org/llama.cpp)** — the substrate almost everything else in this section is built on; C/C++ LLM inference, runs anywhere from a phone to a server.
 - **[Ollama](https://github.com/ollama/ollama)** ★177k — the easiest on-ramp to running local models; most companion projects' "point it at a local model" instructions assume this.
-- **[oobabooga/text-generation-webui](https://github.com/oobabooga/text-generation-webui)** — the long-standing general-purpose local LLM web UI; still the backend of choice for several projects above (z-waif included).
+- **[oobabooga/text-generation-webui](https://github.com/oobabooga/textgen)** — the long-standing general-purpose local LLM web UI; still the backend of choice for several projects above (z-waif included).
 - **[vLLM](https://github.com/vllm-project/vllm)** and **[SGLang](https://github.com/sgl-project/sglang)** — high-throughput serving engines, relevant once you're running a companion for more than one user or need low-latency batched inference.
 - **[LM Studio](https://lmstudio.ai)** — the most popular local-model GUI/OpenAI-compatible server for non-CLI users.
 - **[LiteLLM](https://github.com/BerriAI/litellm)** — a unified API/router across local and hosted LLM providers; the layer that lets a companion swap backends (LM Studio ↔ Ollama ↔ OpenRouter ↔ a hosted API) without touching application code.
@@ -173,7 +173,7 @@ Base models with strong open weights, plus the community fine-tunes that specifi
 
 Useful for character art, expression sheets, promotional material, or dynamically generated scenes.
 
-- **[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** — node-based Stable Diffusion workflow tool; the most flexible and now the de facto standard for anyone doing non-trivial image-gen pipelines (LoRA stacking, ControlNet, batch expression generation).
+- **[ComfyUI](https://github.com/Comfy-Org/ComfyUI)** — node-based Stable Diffusion workflow tool; the most flexible and now the de facto standard for anyone doing non-trivial image-gen pipelines (LoRA stacking, ControlNet, batch expression generation).
 - **[AUTOMATIC1111 / stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)** ★164k — the original and still most-used simple web UI for Stable Diffusion; a gentler on-ramp than ComfyUI.
 - **[Fooocus](https://github.com/lllyasviel/Fooocus)** ★51k — "focus on prompting," a much simpler SDXL UI if ComfyUI/A1111's complexity isn't worth it for your use case.
 - **Model families:** SDXL, Flux, SD3 (open-weight, ComfyUI/A1111-compatible) and **NovelAI** (proprietary but the historically dominant anime-style checkpoint lineage almost everything else in this niche descends from).
@@ -185,7 +185,6 @@ Useful for character art, expression sheets, promotional material, or dynamicall
 - **[Character Card Spec V3](https://github.com/kwaroran/character-card-spec-v3)** — the current character-card interchange standard; supersedes V2.
 - **[Character Card Spec V2](https://github.com/malfoyslastname/character-card-spec-v2)** — still widely supported for backward compatibility across frontends.
 - **[SillyTavern World Info docs](https://docs.sillytavern.app/usage/core-concepts/worldinfo/)** — the reference explanation of lorebook/world-info mechanics (keyword-triggered context injection), which most companion memory systems reinvent in some form.
-- **[ElizaOS characterfile spec](https://github.com/elizaOS/characterfile)** — a JSON-based alternative persona format built for multi-agent/multi-platform deployment rather than single-chat roleplay.
 - **[AICharacterCards.com](https://aicharactercards.com)** — the largest public repository of ready-made character cards in the V2/V3 format.
 
 ---
@@ -200,7 +199,7 @@ Sites for browsing and downloading ready-made character cards (PNG/JSON, V2/V3 s
 - **[RisuRealm](https://realm.risuai.net)** — the card-sharing hub for RisuAI; supports V2, V3, and CHARX card downloads alongside lorebooks and presets.
 - **[Pygmalion.chat](https://pygmalion.chat)** — PygmalionAI's own card library; cards are explicitly designed to import/export without lock-in.
 - **[Datacat](https://datacat.run/characters/recent)** — a tag-browsable index of public character cards.
-- **[JanitorAI](https://janitorai.com)** — a huge closed roleplay platform with an enormous card catalog; it has no native export button, so pulling a SillyTavern-compatible PNG requires a third-party tool like [janitorai-sillytavern-exporter](https://github.com/KashyapPraja/janitorai-sillytavern-exporter) or a similar userscript/extension.
+- **[JanitorAI](https://janitorai.com)** — a huge closed roleplay platform with an enormous card catalog; it has no native export button, so pulling a SillyTavern-compatible PNG requires a third-party tool like [jai-card-extractor](https://github.com/erpocalypse/jai-card-extractor) or a similar userscript/extension.
 
 ---
 
