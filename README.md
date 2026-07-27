@@ -45,7 +45,6 @@ This list exists in a small genre. Read these too — they overlap with this one
 
 - **[proj-airi/awesome-ai-vtubers](https://github.com/proj-airi/awesome-ai-vtubers)** — the densest single catalog of AI VTuber codebases (streaming-first: Bilibili/Twitch/YouTube integration, Live2D). Maintained by the team behind AIRI.
 - **[parallelarc/Awesome-AI-Waifu](https://github.com/parallelarc/Awesome-AI-Waifu)** — companion-first rather than streaming-first; good frameworks/infrastructure split.
-- **[corollari/awesome-waifutech](https://github.com/corollari/awesome-waifutech)** — one of the earliest lists in this space; largely superseded now but historically useful.
 - **[PayDevs/awesome-oss-monetization](https://github.com/PayDevs/awesome-oss-monetization)** — not companion-specific, but relevant if you intend to ship any of this as a product.
 
 ---
@@ -240,7 +239,7 @@ If prompting and RAG aren't getting your companion's voice consistent enough, th
 
 ## Other Awesome Lists
 
-Already linked above in [Prior Art](#prior-art-the-lists-this-one-stands-on) — repeated here for completeness of the table of contents: [awesome-ai-vtubers](https://github.com/proj-airi/awesome-ai-vtubers), [Awesome-AI-Waifu](https://github.com/parallelarc/Awesome-AI-Waifu), [awesome-waifutech](https://github.com/corollari/awesome-waifutech), [awesome-oss-monetization](https://github.com/PayDevs/awesome-oss-monetization).
+Already linked above in [Prior Art](#prior-art-the-lists-this-one-stands-on) — repeated here for completeness of the table of contents: [awesome-ai-vtubers](https://github.com/proj-airi/awesome-ai-vtubers), [Awesome-AI-Waifu](https://github.com/parallelarc/Awesome-AI-Waifu), [awesome-oss-monetization](https://github.com/PayDevs/awesome-oss-monetization).
 
 ---
 
