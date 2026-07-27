@@ -26,6 +26,7 @@ Contributions/corrections welcome — this is a living document.
 - [Embodiment: Avatars, VTubing & Motion](#embodiment-avatars-vtubing--motion)
 - [Image & Video Generation](#image--video-generation)
 - [Character Formats & Persona Standards](#character-formats--persona-standards)
+- [Character Card Explorers & Repositories](#character-card-explorers--repositories)
 - [Frontends & Chat Clients](#frontends--chat-clients)
 - [Fine-Tuning, Datasets & Synthetic Data](#fine-tuning-datasets--synthetic-data)
 - [Papers, Guides & Reading](#papers-guides--reading)
@@ -190,6 +191,20 @@ Useful for character art, expression sheets, promotional material, or dynamicall
 
 ---
 
+## Character Card Explorers & Repositories
+
+Sites for browsing and downloading ready-made character cards (PNG/JSON, V2/V3 spec) that drop straight into SillyTavern or any compatible frontend.
+
+- **[Chub.ai / CharacterHub](https://chub.ai)** — see [Character Formats](#character-formats--persona-standards) above; the largest and most actively moderated card repository, with V2/V3 filtering.
+- **[AICharacterCards.com](https://aicharactercards.com)** — see above; large curated V2/V3 card library.
+- **[CharaVault](https://charavault.net)** — a 195k+ card preservation archive with direct PNG/JSON downloads, moderated uploads, and a public API.
+- **[RisuRealm](https://realm.risuai.net)** — the card-sharing hub for RisuAI; supports V2, V3, and CHARX card downloads alongside lorebooks and presets.
+- **[Pygmalion.chat](https://pygmalion.chat)** — PygmalionAI's own card library; cards are explicitly designed to import/export without lock-in.
+- **[Datacat](https://datacat.run/characters/recent)** — a tag-browsable index of public character cards.
+- **[JanitorAI](https://janitorai.com)** — a huge closed roleplay platform with an enormous card catalog; it has no native export button, so pulling a SillyTavern-compatible PNG requires a third-party tool like [janitorai-sillytavern-exporter](https://github.com/KashyapPraja/janitorai-sillytavern-exporter) or a similar userscript/extension.
+
+---
+
 ## Frontends & Chat Clients
 
 - **[SillyTavern](https://github.com/SillyTavern/SillyTavern)** ★31k — see above; the dominant self-hosted roleplay frontend, with a large extension ecosystem (see [SillyTavern-CharacterLibrary](https://github.com/Sillyanonymous/SillyTavern-CharacterLibrary) as one example).
@@ -234,12 +249,12 @@ Already linked above in [Prior Art](#prior-art-the-lists-this-one-stands-on) —
 - **[r/LocalLLaMA](https://reddit.com/r/LocalLLaMA)** — the center of gravity for local-model discussion generally; essential even though not companion-specific.
 - **[SillyTavern Discord](https://sillytavern.app)** and **[r/SillyTavernAI](https://reddit.com/r/SillyTavernAI)** — the largest roleplay-frontend community; most practical "how do I actually get good outputs" knowledge lives here.
 - **[Civitai](https://civitai.com)** — the largest hub for Stable Diffusion checkpoints/LoRAs (character likenesses, art styles) and increasingly also for character-adjacent tools; useful for the image-gen half of a companion's identity.
-- **[Chub.ai / CharacterHub](https://chub.ai)** and **[AICharacterCards.com](https://aicharactercards.com)** — the largest public character-card repositories/communities.
+- **[Chub.ai / CharacterHub](https://chub.ai)** and **[AICharacterCards.com](https://aicharactercards.com)** — the largest public character-card repositories/communities; see [Character Card Explorers & Repositories](#character-card-explorers--repositories) above for the full list of card sources.
 - **r/AICompanions, r/AIRomance, r/MyBoyfriendIsAI** — user-side (not developer-side) communities discussing the companion-relationship experience itself; valuable if you want to understand what people actually want from these products, as distinct from what's technically interesting to build.
 - **r/VirtualYoutubers, r/AIVtuber** — VTuber-culture-side communities, useful for the embodiment/streaming half of this space.
 - **VRoid Hub / Pixiv VRM communities** and **VRChat community** — avatar-asset and 3D-embodiment communities.
 - **Hugging Face forums/Discord** — model- and dataset-specific discussion.
-- *(Deliberately not linked: Character.AI, Replika, JanitorAI, Kindroid, and similar closed products — mentioned only where relevant above as points of comparison, since this list's focus is open, self-hostable tooling.)*
+- *(Deliberately not linked as chat platforms: Character.AI, Replika, Kindroid, and similar closed products — mentioned only where relevant above as points of comparison, since this list's focus is open, self-hostable tooling. JanitorAI is the exception, linked above solely as a card source.)*
 
 ---
 
