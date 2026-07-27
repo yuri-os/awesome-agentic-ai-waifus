@@ -45,7 +45,6 @@ This list exists in a small genre. Read these too — they overlap with this one
 - **[proj-airi/awesome-ai-vtubers](https://github.com/proj-airi/awesome-ai-vtubers)** — the densest single catalog of AI VTuber codebases (streaming-first: Bilibili/Twitch/YouTube integration, Live2D). Maintained by the team behind AIRI.
 - **[parallelarc/Awesome-AI-Waifu](https://github.com/parallelarc/Awesome-AI-Waifu)** — companion-first rather than streaming-first; good frameworks/infrastructure split.
 - **[corollari/awesome-waifutech](https://github.com/corollari/awesome-waifutech)** — one of the earliest lists in this space; largely superseded now but historically useful.
-- **[ToxSam/open-source-avatars](https://github.com/ToxSam/open-source-avatars)** — the counterpart list for open-licensed 3D avatar models specifically.
 - **[PayDevs/awesome-oss-monetization](https://github.com/PayDevs/awesome-oss-monetization)** — not companion-specific, but relevant if you intend to ship any of this as a product.
 
 ---
@@ -164,7 +163,7 @@ Base models with strong open weights, plus the community fine-tunes that specifi
 - **[VRoid Studio](https://vroid.com/en/studio)** / **[VRoid Hub](https://hub.vroid.com)** — the easiest free tool for making (and sharing) your own VRM avatar without 3D modeling skills.
 - **[Live2D Cubism](https://www.live2d.com/en/)** (Editor + SDK) — the standard 2D "paper puppet" animation format for VTuber-style faces; proprietary runtime but an SDK, not a subscription, and the de facto standard here.
 - **Warudo**, **VNyan**, **VSeeFace** — VRM/3D avatar rigs and streaming tools, each supporting VMC-protocol input from a companion backend.
-- **[open-source-avatars](https://github.com/ToxSam/open-source-avatars)** and **[vrm-samples](https://github.com/madjin/vrm-samples)** — curated collections of openly-licensed avatar models to start from instead of commissioning one.
+- **[vrm-samples](https://github.com/madjin/vrm-samples)** — a curated collection of openly-licensed VRM avatar models to start from instead of commissioning one.
 - **[CharacterStudio](https://github.com/M3-org/CharacterStudio)** — open-source VRM avatar creation/customization tool.
 - **ARKit blendshapes** (52-shape standard) — the de facto facial-expression interchange format if you're doing camera-based face tracking (iPhone or otherwise) to drive an avatar.
 
@@ -226,7 +225,7 @@ If prompting and RAG aren't getting your companion's voice consistent enough, th
 
 ## Other Awesome Lists
 
-Already linked above in [Prior Art](#prior-art-the-lists-this-one-stands-on) — repeated here for completeness of the table of contents: [awesome-ai-vtubers](https://github.com/proj-airi/awesome-ai-vtubers), [Awesome-AI-Waifu](https://github.com/parallelarc/Awesome-AI-Waifu), [awesome-waifutech](https://github.com/corollari/awesome-waifutech), [open-source-avatars](https://github.com/ToxSam/open-source-avatars), [awesome-oss-monetization](https://github.com/PayDevs/awesome-oss-monetization).
+Already linked above in [Prior Art](#prior-art-the-lists-this-one-stands-on) — repeated here for completeness of the table of contents: [awesome-ai-vtubers](https://github.com/proj-airi/awesome-ai-vtubers), [Awesome-AI-Waifu](https://github.com/parallelarc/Awesome-AI-Waifu), [awesome-waifutech](https://github.com/corollari/awesome-waifutech), [awesome-oss-monetization](https://github.com/PayDevs/awesome-oss-monetization).
 
 ---
 
