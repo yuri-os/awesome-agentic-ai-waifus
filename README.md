@@ -177,6 +177,7 @@ Useful for character art, expression sheets, promotional material, or dynamicall
 - **[AUTOMATIC1111 / stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)** ★164k — the original and still most-used simple web UI for Stable Diffusion; a gentler on-ramp than ComfyUI.
 - **[Fooocus](https://github.com/lllyasviel/Fooocus)** ★51k — "focus on prompting," a much simpler SDXL UI if ComfyUI/A1111's complexity isn't worth it for your use case.
 - **Model families:** SDXL, Flux, SD3 (open-weight, ComfyUI/A1111-compatible) and **NovelAI** (proprietary but the historically dominant anime-style checkpoint lineage almost everything else in this niche descends from).
+- **[Civitai](https://civitai.com)** — the primary source for downloading the checkpoints/LoRAs above: base models, character/style LoRAs, embeddings, and ControlNet/VAE add-ons for SDXL, Flux, SD3, and NovelAI-descended anime models; see also [Communities & Websites](#communities--websites) below for its community role.
 
 ---
 
@@ -246,7 +247,7 @@ Already linked above in [Prior Art](#prior-art-the-lists-this-one-stands-on) —
 
 - **[r/LocalLLaMA](https://reddit.com/r/LocalLLaMA)** — the center of gravity for local-model discussion generally; essential even though not companion-specific.
 - **[SillyTavern Discord](https://sillytavern.app)** and **[r/SillyTavernAI](https://reddit.com/r/SillyTavernAI)** — the largest roleplay-frontend community; most practical "how do I actually get good outputs" knowledge lives here.
-- **[Civitai](https://civitai.com)** — the largest hub for Stable Diffusion checkpoints/LoRAs (character likenesses, art styles) and increasingly also for character-adjacent tools; useful for the image-gen half of a companion's identity.
+- **[Civitai](https://civitai.com)** — the largest hub for Stable Diffusion checkpoints/LoRAs (character likenesses, art styles) and increasingly also for character-adjacent tools; useful for the image-gen half of a companion's identity; see also [Image & Video Generation](#image--video-generation) above for its role as a model source.
 - **[Chub.ai / CharacterHub](https://chub.ai)** and **[AICharacterCards.com](https://aicharactercards.com)** — the largest public character-card repositories/communities; see [Character Card Explorers & Repositories](#character-card-explorers--repositories) above for the full list of card sources.
 - **r/AICompanions, r/AIRomance, r/MyBoyfriendIsAI** — user-side (not developer-side) communities discussing the companion-relationship experience itself; valuable if you want to understand what people actually want from these products, as distinct from what's technically interesting to build.
 - **r/VirtualYoutubers, r/AIVtuber** — VTuber-culture-side communities, useful for the embodiment/streaming half of this space.
