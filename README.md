@@ -107,6 +107,7 @@ The hardest unsolved problem in this space — giving a companion continuity acr
 - **[Mem0](https://github.com/mem0ai/mem0)** ★62k — "Universal memory layer for AI agents." The most widely adopted drop-in memory layer right now; simple API, good defaults.
 - **[Graphiti / Zep](https://github.com/getzep/graphiti)** ★29k — temporally-aware knowledge graphs for agent memory; the state of the art if you need memory that understands *when* a fact was true, not just that it was.
 - **[Microsoft GraphRAG](https://github.com/microsoft/graphrag)** — graph-structured retrieval-augmented generation; a heavier-weight alternative to flat vector RAG for companions with large amounts of lore/history to draw on.
+- **[Hyperconsciousness](https://github.com/louis030195/hyperconsciousness)** (developer alpha) - Encrypted, append-only knowledge store with a Rust CLI and MCP server. Provides scoped, expiring access to stored records for agents; a memory backend for custom integrations.
 - **Vector stores:** [Qdrant](https://github.com/qdrant/qdrant), [Chroma](https://github.com/chroma-core/chroma), [Weaviate](https://github.com/weaviate/weaviate), [pgvector](https://github.com/pgvector/pgvector) — the underlying retrieval layer most of the above (or a DIY memory system) sits on top of.
 - Related benchmarks worth knowing about when evaluating any of these: **LongMemEval**, **LoCoMo**.
 
