@@ -1,0 +1,18 @@
+# Config for the link checker (https://github.com/lycheeverse/lychee),
+# run by .github/workflows/links.yml.
+
+max_retries = 3
+retry_wait_time = 5
+timeout = 30
+max_concurrency = 8
+
+# 429 = rate-limited, 403 = bot-blocked; neither means the link is dead.
+accept = ["200..=299", "403", "429"]
+
+# Sites that block automated requests outright, so every check would fail.
+exclude = [
+  '^https?://(www\.|old\.)?reddit\.com/',
+  '^https://discord\.gg/',
+  '^https://store\.steampowered\.com/',
+  '^https://janitorai\.com',
+]

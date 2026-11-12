@@ -1,0 +1,40 @@
+name: Link check
+
+on:
+  push:
+    branches: [master]
+    paths: ["**.md", "lychee.toml", ".github/workflows/links.yml"]
+  pull_request:
+    paths: ["**.md", "lychee.toml", ".github/workflows/links.yml"]
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check links
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --config lychee.toml README.md CONTRIBUTING.md
+          output: ./lychee/out.md
+          # On the weekly run, report via an issue instead of failing the workflow.
+          fail: ${{ github.event_name != 'schedule' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Open an issue for broken links (scheduled runs only)
+        if: github.event_name == 'schedule' && steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v6
+        with:
+          title: Broken links found by weekly link check
+          content-filepath: ./lychee/out.md
+          labels: broken-links

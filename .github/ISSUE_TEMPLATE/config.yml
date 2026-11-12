@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Contributing guidelines
+    url: https://github.com/yuri-os/awesome-agentic-ai-waifus/blob/master/CONTRIBUTING.md
+    about: What belongs on the list and how entries are formatted.

@@ -1,0 +1,62 @@
+name: Suggest a resource
+description: Propose a project, model, paper, community, or guide for the list
+title: "Add: "
+labels: ["addition"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: e.g. Open-LLM-VTuber
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: Source repo preferred; project site or Hugging Face page otherwise.
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      options:
+        - Full-Stack AI Companion / AI VTuber Projects
+        - Agentic AI Frameworks
+        - Memory & Long-Term Context
+        - Local LLM Inference & Serving
+        - Open / Roleplay-Tuned Language Models
+        - "Voice: Text-to-Speech"
+        - "Voice: Speech-to-Text & Turn-Taking"
+        - "Embodiment: Avatars, VTubing & Motion"
+        - Image & Video Generation
+        - Character Formats & Persona Standards
+        - Character Card Explorers & Repositories
+        - Frontends & Chat Clients
+        - Fine-Tuning, Datasets & Synthetic Data
+        - Papers, Guides & Reading
+        - Communities & Websites
+        - Creators & Showcases
+        - Adjacent Reading (not strictly open source)
+        - "AI-Waifu-Adjacent Media: Anime, TV, Film & Books"
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it belongs
+      description: What it does, and why it matters for building AI companions specifically. Mention the license and whether it's actively maintained.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: It's open source or freely available (or it's closed but has published educational material, for Adjacent Reading).
+          required: true
+        - label: It isn't already on the list.
+          required: true
+        - label: I'm the author or maintainer (fine, just disclose it).

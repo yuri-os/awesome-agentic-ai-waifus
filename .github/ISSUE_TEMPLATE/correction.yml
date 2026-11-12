@@ -1,0 +1,25 @@
+name: Correction or dead link
+description: Report a wrong description, broken link, outdated info, or bad placement
+title: "Fix: "
+labels: ["correction"]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Which entry or section?
+      placeholder: "e.g. Coqui TTS, in Voice: Text-to-Speech"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong?
+      description: Include a source for the correct information if you have one.
+    validations:
+      required: true
+  - type: checkboxes
+    id: maintainer
+    attributes:
+      label: Disclosure
+      options:
+        - label: I maintain the project in question.
